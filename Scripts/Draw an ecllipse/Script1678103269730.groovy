@@ -17,29 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-import org.ccil.cowan.tagsoup.Parser;
-import org.openqa.selenium.By as By
-import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.WebElement as WebElement
-
 GoToBoard
 
-WebUI.click(findTestObject('Tools sidebar/Straight line icon'))
+WebUI.click(findTestObject('Tools sidebar/Ellipse icon'))
 
-WebUI.clickOffset(findTestObject('Whiteboard'), 20, -180)
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.clickOffset(findTestObject('Whiteboard'), 20, -170)
+WebUI.takeFullPageScreenshotAsCheckpoint('ecllipse', [])
 
-String ENCODING = "UTF-8"
+WebUI.closeBrowser()
 
-@Grapes( @Grab('org.ccil.cowan.tagsoup:tagsoup:1.2') )
-def PARSER = new XmlSlurper(new Parser() )
-
-def url = "http://www.bing.com/search?q=web+scraping"
-
-new URL(url).withReader (ENCODING) { reader ->
-
-   def document = PARSER.parse(reader)
-   document.'**'.find{ it['@id'] == 'results'}.'**'.findAll{ it.name() == 'div'}.each { println it.text() }
-}

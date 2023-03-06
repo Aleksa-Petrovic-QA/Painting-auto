@@ -21,9 +21,9 @@ GoToBoard
 
 WebUI.click(findTestObject('Tools sidebar/Text icon'))
 
-WebUI.clickOffset(findTestObject('Whiteboard'), 20, -180)
+WebUI.clickOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.setText(findTestObject('Text_input field'), 'testing')
+WebUI.setText(findTestObject('Canvas/Text_input field'), 'testing')
 
 WebUI.takeFullPageScreenshotAsCheckpoint('displayedText', [])
 

@@ -21,13 +21,13 @@ GoToBoard
 
 WebUI.click(findTestObject('Tools sidebar/Straight line icon'))
 
-WebUI.dragAndDropByOffset(findTestObject('Whiteboard'), 20, -180)
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.click(findTestObject('Tools sidebar/Hand icon'))
+WebUI.click(findTestObject('Tools sidebar/Zoom in icon'))
 
-WebUI.dragAndDropByOffset(findTestObject('Whiteboard'), 20, -240)
+WebUI.clickOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.takeScreenshotAsCheckpoint('movedDrawing', [])
+WebUI.takeFullPageScreenshotAsCheckpoint('zoomedInPage')
 
 WebUI.closeBrowser()
 

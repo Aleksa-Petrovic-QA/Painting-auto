@@ -19,11 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 GoToBoard
 
-WebUI.click(findTestObject('Tools sidebar/Rectangle icon'))
+WebUI.click(findTestObject('Tools sidebar/Straight line icon'))
 
-WebUI.dragAndDropByOffset(findTestObject('Whiteboard'), 20, -180)
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.takeFullPageScreenshotAsCheckpoint('rectangle', [])
+WebUI.click(findTestObject('Tools sidebar/Hand icon'))
+
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -240)
+
+WebUI.takeScreenshotAsCheckpoint('movedDrawing', [])
 
 WebUI.closeBrowser()
 

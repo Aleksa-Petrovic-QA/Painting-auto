@@ -21,13 +21,13 @@ GoToBoard
 
 WebUI.click(findTestObject('Tools sidebar/Straight line icon'))
 
-WebUI.dragAndDropByOffset(findTestObject('Whiteboard'), 20, -180)
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
 WebUI.takeFullPageScreenshotAsCheckpoint('lineDrawn', [])
 
 WebUI.click(findTestObject('Tools sidebar/Eraser icon'))
 
-WebUI.clickOffset(findTestObject('Whiteboard'), 20, -175)
+WebUI.clickOffset(findTestObject('Canvas/Whiteboard'), 20, -175)
 
 WebUI.takeFullPageScreenshotAsCheckpoint('erasedDrawing', [])
 
