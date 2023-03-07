@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "DE877503F775A0FABEC1FC63FC486EF9",
+  "keywordClasses": [
+    {
+      "name": "wbo.zoomOut",
+      "keywordMethods": [
+        {
+          "name": "zoomOutPage",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

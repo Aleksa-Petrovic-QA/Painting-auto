@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Draw a straight line</name>
+   <name>Draw a rectangle and a square</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>bd59a9ec-5a21-4667-b3a1-8848d2486a4b</testCaseGuid>
+   <testCaseGuid>c286eab4-603f-4177-b21d-77d0dbecc9cb</testCaseGuid>
 </TestCaseEntity>

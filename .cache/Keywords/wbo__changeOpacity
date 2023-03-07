@@ -1,0 +1,19 @@
+{
+  "keywordFileContentHash": "1F84E96CB058FC3E9FAD2C6D97FB018B",
+  "keywordClasses": [
+    {
+      "name": "wbo.changeOpacity",
+      "keywordMethods": [
+        {
+          "name": "increaseOpacity",
+          "parameters": []
+        },
+        {
+          "name": "decreaseOpacity",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

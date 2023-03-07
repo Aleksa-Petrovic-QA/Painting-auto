@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Draw an ecllipse</name>
+   <name>Draw an ecllipse and a circle</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5973b076-7072-440b-a346-eb7775a68b25</testCaseGuid>

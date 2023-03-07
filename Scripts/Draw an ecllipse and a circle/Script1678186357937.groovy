@@ -17,13 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-GoToBoard
+WebUI.click(findTestObject('Home page/Create a private board_button'))
 
-WebUI.click(findTestObject('Tools sidebar/Ellipse icon'))
+CustomKeywords.'wbo.changePenColor.selectBlueColor'()
+
+WebUI.click(findTestObject('Sidebar menu/Ellipse icon'))
 
 WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.takeFullPageScreenshotAsCheckpoint('ecllipse', [])
+WebUI.takeScreenshotAsCheckpoint('ecllipse', [])
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Sidebar menu/Ellipse icon'))
+
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 80, 200)
+
+WebUI.takeScreenshotAsCheckpoint('circle', [])
+
+not_run: WebUI.closeBrowser()
 

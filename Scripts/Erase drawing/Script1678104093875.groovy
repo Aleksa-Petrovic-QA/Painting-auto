@@ -17,19 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-GoToBoard
+WebUI.click(findTestObject('Home page/Create a private board_button'))
 
-WebUI.click(findTestObject('Tools sidebar/Straight line icon'))
+CustomKeywords.'wbo.changePenColor.selectBlueColor'()
+
+WebUI.click(findTestObject('Sidebar menu/Straight line icon'))
 
 WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.takeFullPageScreenshotAsCheckpoint('lineDrawn', [])
+WebUI.takeScreenshotAsCheckpoint('lineDrawn', [])
 
-WebUI.click(findTestObject('Tools sidebar/Eraser icon'))
+WebUI.click(findTestObject('Sidebar menu/Eraser icon'))
 
 WebUI.clickOffset(findTestObject('Canvas/Whiteboard'), 20, -175)
 
-WebUI.takeFullPageScreenshotAsCheckpoint('erasedDrawing', [])
+WebUI.takeScreenshotAsCheckpoint('erasedDrawing', [])
 
 WebUI.closeBrowser()
 

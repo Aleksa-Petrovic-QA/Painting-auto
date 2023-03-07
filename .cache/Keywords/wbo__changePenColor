@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "9039D36B68D13984D2A823F377B8219F",
+  "keywordClasses": [
+    {
+      "name": "wbo.changePenColor",
+      "keywordMethods": [
+        {
+          "name": "selectBlueColor",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

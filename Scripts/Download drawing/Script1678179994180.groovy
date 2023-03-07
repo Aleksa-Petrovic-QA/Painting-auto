@@ -17,13 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-GoToBoard
+String home = System.getProperty('user.home')
 
-WebUI.click(findTestObject('Tools sidebar/Straight line icon'))
+String userDownloads = new File(home + '/Downloads/')
 
-WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
+WebUI.setText(findTestObject('Home page/Board name_input field'), 'test test')
 
-WebUI.takeFullPageScreenshotAsCheckpoint('straightLine', [])
+WebUI.click(findTestObject('Home page/Go_button'))
+
+WebUI.click(findTestObject('Sidebar menu/Download icon'))
+
+WebUI.delay(3)
+
+//keyword is checking if the file is present in the "download" folder and then it deletes the file
+//IMPORTANT There shouldn't be any file in the "download" folder with the same name before running this test
+CustomKeywords.'wbo.downloadCheck.isFileDownloaded'(userDownloads, 'test test.svg')
 
 WebUI.closeBrowser()
 

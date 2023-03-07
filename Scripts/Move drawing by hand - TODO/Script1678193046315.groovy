@@ -19,17 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Home page/Create a private board_button'))
 
-WebUI.click(findTestObject('Sidebar menu/Grid icon'))
+CustomKeywords.'wbo.changePenColor.selectBlueColor'()
 
-WebUI.takeScreenshotAsCheckpoint('lineView', [])
+WebUI.click(findTestObject('Sidebar menu/Straight line icon'))
 
-WebUI.click(findTestObject('Sidebar menu/Grid icon'))
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.takeScreenshotAsCheckpoint('dotsView', [])
+WebUI.click(findTestObject('Sidebar menu/Hand icon'))
 
-WebUI.click(findTestObject('Sidebar menu/Grid icon'))
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -240)
 
-WebUI.takeScreenshotAsCheckpoint('defaultView', [])
+WebUI.takeScreenshotAsCheckpoint('movedDrawing', [])
 
 WebUI.closeBrowser()
 

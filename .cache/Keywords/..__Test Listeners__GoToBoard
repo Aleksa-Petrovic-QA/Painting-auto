@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "CD9652AAAD488F04BA353BA0EC8C06A3",
+  "keywordFileContentHash": "D315F3222B270CF5B3F405836F847AA7",
   "keywordClasses": [
     {
       "name": "GoToBoard",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

@@ -34,7 +34,5 @@ class GoToBoard {
 		WebUI.maximizeWindow()
 
 		WebUI.navigateToUrl('https://wbo.ophir.dev/')
-
-		WebUI.click(findTestObject('Home page/Create a private board_button'))
 	}
 }

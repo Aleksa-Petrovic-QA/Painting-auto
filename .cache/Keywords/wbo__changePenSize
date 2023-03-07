@@ -1,0 +1,21 @@
+{
+  "keywordFileContentHash": "2318A35854BD3888D8C7A2E4853D750F",
+  "keywordClasses": [
+    {
+      "name": "wbo.changePenSize",
+      "keywordMethods": [
+        {
+          "name": "increasePenSize",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "decreasePenSize",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
