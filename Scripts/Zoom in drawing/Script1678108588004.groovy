@@ -29,11 +29,12 @@ WebUI.click(findTestObject('Sidebar menu/Zoom in icon'))
 
 WebUI.click(findTestObject('Canvas/Whiteboard'))
 
-WebUI.takeFullPageScreenshotAsCheckpoint('zoomedInPage')
+WebUI.verifyElementAttributeValue(findTestObject('Canvas/Canvas_svg'), 'style', 'cursor: zoom-in; will-change: transform; transform: scale(1.5);', 
+    0)
 
 CustomKeywords.'wbo.zoomOut.zoomOutPage'()
 
-WebUI.takeFullPageScreenshotAsCheckpoint('zoomedOutPage')
+WebUI.takeScreenshotAsCheckpoint('zoomedOutPage', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

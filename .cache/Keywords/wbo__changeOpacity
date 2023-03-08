@@ -6,14 +6,16 @@
       "keywordMethods": [
         {
           "name": "increaseOpacity",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "decreaseOpacity",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
