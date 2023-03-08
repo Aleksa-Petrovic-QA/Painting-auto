@@ -37,6 +37,8 @@ WebUI.click(findTestObject('Sidebar menu/Pencil icon'))
 
 WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 80, 160)
 
+WebUI.delay(2)
+
 WebUI.takeScreenshotAsCheckpoint('whiteOutLine', [])
 
 WebUI.closeBrowser()

@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Home page/Create a private board_button'))
 
+CustomKeywords.'wbo.changePenColor.selectBlueColor'()
+
 WebUI.click(findTestObject('Sidebar menu/Grid icon'))
 
 WebUI.takeScreenshotAsCheckpoint('lineView', [])
