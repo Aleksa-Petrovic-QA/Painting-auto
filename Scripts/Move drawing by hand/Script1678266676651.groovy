@@ -23,15 +23,29 @@ CustomKeywords.'wbo.changePenColor.selectBlueColor'()
 
 WebUI.click(findTestObject('Sidebar menu/Straight line icon'))
 
-WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), -80, -80)
 
-WebUI.takeScreenshotAsCheckpoint('straightLine', [])
+WebUI.click(findTestObject('Sidebar menu/Hand icon'))
 
-WebUI.click(findTestObject('Sidebar menu/Straight line icon'))
+WebUI.click(findTestObject('Sidebar menu/Hand icon'))
 
-WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -250)
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), -50, -130)
 
-WebUI.takeScreenshotAsCheckpoint('twoStraightLines', [])
+WebUI.takeScreenshotAsCheckpoint('movedDrawingBySelector', [])
+
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), -140, -230)
+
+WebUI.takeScreenshotAsCheckpoint('selectedDrawing', [])
+
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 200, 200)
+
+WebUI.takeScreenshotAsCheckpoint('expandedDrawing', [])
+
+WebUI.click(findTestObject('Sidebar menu/Hand icon'))
+
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -240)
+
+WebUI.takeScreenshotAsCheckpoint('movedDrawing', [])
 
 WebUI.closeBrowser()
 

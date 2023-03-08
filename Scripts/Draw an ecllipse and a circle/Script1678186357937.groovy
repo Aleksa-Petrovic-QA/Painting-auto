@@ -25,13 +25,11 @@ WebUI.click(findTestObject('Sidebar menu/Ellipse icon'))
 
 WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.takeScreenshotAsCheckpoint('ecllipse', [])
-
 WebUI.click(findTestObject('Sidebar menu/Ellipse icon'))
 
 WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 80, 200)
 
-WebUI.takeScreenshotAsCheckpoint('circle', [])
+WebUI.takeScreenshotAsCheckpoint('circleAndEcllipse', [])
 
-not_run: WebUI.closeBrowser()
+WebUI.closeBrowser()
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Move drawing by hand - TODO</name>
+   <name>Draw straight lines with lower opacity</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>cf412fec-e06d-4ae1-b9cd-de100eb1cd8d</testCaseGuid>
+   <testCaseGuid>bd59a9ec-5a21-4667-b3a1-8848d2486a4b</testCaseGuid>
 </TestCaseEntity>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Draw straight lines</name>
+   <name>Move drawing by hand</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>bd59a9ec-5a21-4667-b3a1-8848d2486a4b</testCaseGuid>
+   <testCaseGuid>cf412fec-e06d-4ae1-b9cd-de100eb1cd8d</testCaseGuid>
 </TestCaseEntity>

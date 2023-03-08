@@ -21,15 +21,19 @@ WebUI.click(findTestObject('Home page/Create a private board_button'))
 
 CustomKeywords.'wbo.changePenColor.selectBlueColor'()
 
+CustomKeywords.'wbo.changeOpacity.decreaseOpacity'()
+
 WebUI.click(findTestObject('Sidebar menu/Straight line icon'))
 
 WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.click(findTestObject('Sidebar menu/Hand icon'))
+WebUI.takeScreenshotAsCheckpoint('straightLine', [])
 
-WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -240)
+WebUI.click(findTestObject('Sidebar menu/Straight line icon'))
 
-WebUI.takeScreenshotAsCheckpoint('movedDrawing', [])
+WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -250)
+
+WebUI.takeScreenshotAsCheckpoint('twoStraightLines', [])
 
 WebUI.closeBrowser()
 

@@ -25,13 +25,11 @@ WebUI.click(findTestObject('Sidebar menu/Rectangle icon'))
 
 WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 20, -180)
 
-WebUI.takeScreenshotAsCheckpoint('rectangle', [])
-
 WebUI.click(findTestObject('Sidebar menu/Rectangle icon'))
 
 WebUI.dragAndDropByOffset(findTestObject('Canvas/Whiteboard'), 80, 200)
 
-WebUI.takeScreenshotAsCheckpoint('square', [])
+WebUI.takeScreenshotAsCheckpoint('squareAndRectangle', [])
 
 WebUI.closeBrowser()
 
